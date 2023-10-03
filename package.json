@@ -1,0 +1,19 @@
+{
+  "name": "web-app-template",
+  "version": "0.0.1",
+  "description": "Template of a web application",
+  "author": "Ivan Dymkov <mstrdymio@gmail.com> (http://dymio.net/)",
+  "repository": "github:dymio/web-app-template",
+  "bugs": {
+    "url": "https://github.com/dymio/web-app-template/issues",
+    "email": "mstrdymio@gmail.com"
+  },
+  "homepage": "https://github.com/dymio/web-app-template#readme",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "18.18.0"
+  }
+}

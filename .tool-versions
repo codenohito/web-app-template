@@ -1,0 +1,4 @@
+# this is a config file for asdf, the multiple runtime version manager https://asdf-vm.com
+# this config sets the versions of tools we use in this project
+
+nodejs 18.18.0  # on version change change it in package.json engines too
