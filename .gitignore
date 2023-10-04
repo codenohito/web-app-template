@@ -58,3 +58,7 @@ ehthumbs_vista.db
 
 # End of https://www.toptal.com/developers/gitignore/api/linux,macos,windows,vim,node
 # Full list of templates: https://www.toptal.com/developers/gitignore/api/list?format=lines
+
+### App ###
+
+dist/
