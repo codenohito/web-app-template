@@ -1,14 +1,16 @@
 const path = require('path');
 const { merge } = require('webpack-merge');
-const CopyPlugin = require("copy-webpack-plugin");
+const autoprefixer = require('autoprefixer');
+const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const devMode = process.env.NODE_ENV !== "production";
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const devMode = process.env.NODE_ENV !== 'production';
 
 const common = {
   entry: './src/index.js',
   output: {
-    filename: (devMode ? "bundle.js" : "bundle.[contenthash].js"),
+    filename: (devMode ? 'bundle.js' : 'bundle.[contenthash].js'),
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
@@ -19,15 +21,15 @@ const common = {
           from: 'public',
           globOptions: {
             gitignore: true,
-            ignore: ['**/index.html']
-          }
+            ignore: ['**/index.html'],
+          },
         },
       ],
     }),
     new HtmlWebpackPlugin({ template: 'public/index.html' }),
     new MiniCssExtractPlugin({
-      filename: (devMode ? "[name].css" : "[name].[contenthash].css"),
-    })
+      filename: (devMode ? '[name].css' : '[name].[contenthash].css'),
+    }),
   ],
   module: {
     rules: [
@@ -35,12 +37,12 @@ const common = {
         test: /\.css$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
+          'css-loader',
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [require('autoprefixer')],
+                plugins: [autoprefixer],
               },
             },
           },
@@ -52,8 +54,8 @@ const common = {
 
 module.exports = devMode
   ? merge(common, {
-     mode: 'development',
-     output: {
+    mode: 'development',
+    output: {
       filename: 'bundle.js',
       path: path.resolve(__dirname, 'dist'),
       clean: true,
@@ -66,5 +68,5 @@ module.exports = devMode
       filename: 'bundle.[contenthash].js',
       path: path.resolve(__dirname, 'dist'),
       clean: true,
-    }
+    },
   });
