@@ -4,11 +4,11 @@
   "description": "Template of a web application",
   "author": "Ivan Dymkov <mstrdymio@gmail.com> (http://dymio.net/)",
   "repository": "github:dymio/web-app-template",
+  "homepage": "https://github.com/dymio/web-app-template#readme",
   "bugs": {
     "url": "https://github.com/dymio/web-app-template/issues",
     "email": "mstrdymio@gmail.com"
   },
-  "homepage": "https://github.com/dymio/web-app-template#readme",
   "license": "ISC",
   "private": true,
   "scripts": {
