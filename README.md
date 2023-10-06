@@ -20,6 +20,16 @@ If you need several HTML-pages for your project, consider to use a template engi
 
 If you want to use separate js-files for that htmls, consider to use several entries and splitting dependecies to a separate JS-file using [dependOn option](https://webpack.js.org/guides/code-splitting/#prevent-duplication).
 
+## Building the application
+
+Make sure you have the version of Node.js specified in `package.json`:`engines.node`.
+We recommend to use [asdf](https://asdf-vm.com) for it.
+
+Install node modules with command `npm install`.
+
+Run `npm run build`.
+It will build the application to `distr` directory.
+
 
 ## Contributing
 
