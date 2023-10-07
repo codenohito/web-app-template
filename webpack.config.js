@@ -10,7 +10,7 @@ const devMode = process.env.NODE_ENV !== 'production';
 const common = {
   entry: './src/index.js',
   output: {
-    filename: devMode ? 'bundle.js' : 'bundle.[contenthash].js',
+    filename: devMode ? '[name].js' : '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
