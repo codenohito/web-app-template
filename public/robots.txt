@@ -20,15 +20,15 @@
 #
 #   Art by Sulliwan Sucks
 
-# # Open site for spiders
-# User-agent: Googlebot
-# Disallow: /humans.txt
-# Allow: /
-#
-# User-agent: *
-# Disallow: /humans.txt
-# Disallow:
+# Open web app for search engine crawlers
+User-agent: Googlebot
+Disallow: /humans.txt
+Allow: /
 
-# Ban all spiders from the entire site
 User-agent: *
-Disallow: /
+Disallow: /humans.txt
+Disallow:
+
+# # Ban any search engine crawling
+# User-agent: *
+# Disallow: /
