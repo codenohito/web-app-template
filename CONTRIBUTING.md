@@ -21,6 +21,10 @@ We use [Lefthook](https://github.com/evilmartians/lefthook) to check files of a 
 
 Pull requests with the wrong formatted code can be rejected.
 
+## Run for development
+
+Use `npm start` to run webpack in watch mode. The result will be in the `dist` directory. You can serve this directory with any web server like the [http-server](https://www.npmjs.com/package/http-server) npm package or default Ruby static server for example: `ruby -run -e httpd . -p 3000`.
+
 ## Configuring build
 
 For building we use [webpack](https://webpack.js.org). Config is in the `webpack.config.js` file.
