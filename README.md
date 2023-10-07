@@ -27,13 +27,24 @@ If you want to use separate js-files for that htmls, consider to use several ent
 
 ## Building the application
 
+### With Docker
+
+Remove `dist` directory if exist. You can do it with `rm -Rf dist` command.
+
+Run `docker build --output=dist --target=build-result .`
+
+Find the application built in `dist` directory.
+
+### Locally
+
 Make sure you have the version of Node.js specified in `package.json`:`engines.node`.
 We recommend to use [asdf](https://asdf-vm.com) for it.
 
-Install node modules with command `npm install`.
+Install node modules with command `npm install`
 
-Run `npm run build`.
-It will build the application to `distr` directory.
+Run `npm run build`
+
+Find the application built in `dist` directory.
 
 ## Contributing
 
