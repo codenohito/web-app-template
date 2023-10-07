@@ -21,5 +21,5 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {},
-  ignorePatterns: ['dist'],
+  ignorePatterns: ['dist', '!.prettierrc.js', '!.stylelintrc.js'],
 };
