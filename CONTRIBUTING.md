@@ -11,7 +11,9 @@ Architecture rules. [Feature Sliced Design](https://feature-sliced.design/) for 
 
 Writing tests rules.
 
-Linters tools and requirements. Pre-commit.
+Linters tools and requirements.
+We recommend to install plugins or run `npm run code:fix`
+We use [Lefthook](https://github.com/evilmartians/) for git hooks management. It allows to run linters and style checkers automatically before a commit. See the config in `lefthook.yml` file.
 
 Commit messages. Make sure you have setted up correct user.name and user.email settings of GIT. https://www.conventionalcommits.org/en/v1.0.0/
 Commit message subject should continue the phrase "If applied, this commit will...". Refer issues.

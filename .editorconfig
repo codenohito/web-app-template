@@ -17,7 +17,7 @@ max_line_length = 120
 indent_style = space
 indent_size = 4
 
-[src/**.{js,ts,jsx,tsx,node,json}]
+[src/**.{js,cjs,mjs,jsx,ts,tsx,json}]
 indent_style = space
 indent_size = 2
 

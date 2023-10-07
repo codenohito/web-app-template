@@ -1,0 +1,18 @@
+# Refer for explanation to following link:
+# https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
+# run `npx lefthook install` after adding new hook types
+
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      glob: '*.{js,cjs,mjs,jsx,ts,tsx}'
+      # exclude: dist
+      run: npx eslint {staged_files}
+    stylelint:
+      glob: '*.css'
+      run: npx stylelint {staged_files}
+    prettier:
+      glob: '*.{js,cjs,mjs,jsx,ts,tsx,css,scss,json,md}'
+      exclude: 'package-lock.json'
+      run: npx prettier {staged_files} --check
