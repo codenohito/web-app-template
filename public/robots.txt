@@ -29,6 +29,6 @@ User-agent: *
 Disallow: /humans.txt
 Disallow:
 
-# # Ban any search engine crawling
+# # Ban any search engine's crawling
 # User-agent: *
 # Disallow: /
